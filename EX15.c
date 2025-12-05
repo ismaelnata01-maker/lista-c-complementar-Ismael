@@ -3,7 +3,7 @@
 #include<locale.h>
 
 int main(){
-    int n, seque= 0, i;
+    int n, seque= 0, i, total= 0;
    
     setlocale(LC_ALL, "portuguese");
    
@@ -12,7 +12,12 @@ int main(){
    
     for(i = 1; i <= n; i++){
         seque = 1 + seque;
-        printf(" %d", seque);}
+        total = seque + total;
+        printf(" %d \n", seque);
+   
+    }
+       
+        printf("total = %d", total);
    
     system("pause");
     return 0;

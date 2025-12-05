@@ -3,17 +3,18 @@
 #include<locale.h>
 
 int main(){
-    int n, seque= 0, i;
-   
+
     setlocale(LC_ALL, "portuguese");
-   
+
+    int n, quadrado;
+
     printf("Digite um número: ");
     scanf("%d", &n);
-   
-    for(i = 1; i <= n; i++){
-        seque = 1 + seque;
-        printf(" %d", seque);}
-   
+
+    quadrado = n * n;
+
+    printf("O quadrado de %d é %d", n, quadrado);
+
     system("pause");
     return 0;
 }
